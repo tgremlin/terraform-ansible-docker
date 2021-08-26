@@ -22,6 +22,7 @@ RUN apt-get update \
 	python3 \
 	python3-pip \
 	python3-boto \
+	wget \
 	unzip \
 	&& curl -LO https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip \
 	&& unzip '*.zip' -d /usr/local/bin \
